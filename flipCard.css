@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-image: url('../bassicJsCode/images/backgeound-gamecard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    z-index: 1;
+}
+.row h1,h3{
+    text-align: center;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+.content-game{
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.card{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.font img,.back img{
+    width: 150px;
+    height: 200px;
+}
+.font img {
+    transition: all 0.5s;
+    transform: rotateY(-180deg);
+         backface-visibility: hidden;
+}
+.back img{
+     position: absolute;
+     transform: rotateY(0deg);
+     transition: all 0.5s;
+     border-radius: 10px;
+     top: 0;
+     left: 0;
+     backface-visibility: hidden;
+}
+ /* .card:hover .font img{
+transform: rotateY(0deg);
+} */
+/* .card:hover .back img{
+    transform: rotateY(180deg);
+}  */
